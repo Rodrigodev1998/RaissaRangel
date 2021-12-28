@@ -101,11 +101,11 @@
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: crimson;
+    color: #fff;
     font-weight: 500;
-    background: #fff;
+    font-weight: bolder;
     padding: 4px 5px;
-    border-radius: 12px;
+    
 }
 
 .home .home-content a{
@@ -259,7 +259,9 @@ section.photos ul li.active{
 
 /*contatos*/
 .contact .title::after{
-    content: "get in touch";
+    
+    align-items: center;
+    justify-content: center;
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -356,7 +358,13 @@ section.photos ul li.active{
 /*TEAM*/
 
 .teams .title::after{
-    content: "who with me";
+    content: "";
+}
+.teams .title{
+    color: crimson;
+    font-family:'Poppins', sans-serif;
+    text-align: center;
+    padding-bottom: 15px;
 }
 .teams .carousel .card{
     background: #222;
@@ -365,6 +373,8 @@ section.photos ul li.active{
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
 }
 .teams .carousel .card:hover{
     background: crimson;
@@ -421,6 +431,7 @@ section.photos ul li.active{
 footer{
     background: #111;
     padding: 15px 23px;
+    font-family: 'Poppins', sans-serif;
     color: #fff;
     text-align: center;
 }
