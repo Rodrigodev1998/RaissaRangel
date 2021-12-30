@@ -128,22 +128,27 @@
                 </div>
                 <div class="column right">
                     <div class="text">Mensagem</div>
-                    <form action="#">
-                        <div class="fields">
+                    <form action="https://api.staticforms.xyz/submit" method="POST">
+                        <input type="hidden" name="accessKey" value="1f6bcecc-8519-46d7-87d1-0ba1b259238f">
+                        <div class="">
                             <div class="field name">
-                                <input type="text" placeholder="Nome" required>
+                            <input type="text"  placeholder="Nome" name="name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" name="email" placeholder="Email" required>
                             </div>
                         </div>
+                        <div class="field email">
+                            <input type="tel" name="phone" placeholder="(73)98100-1234" required>
+                        </div>
                         <div class="field">
-                            <input type="text" placeholder="Tipo de ensaio" required>
+                            <input type="text" name="text" placeholder="message" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Eu gostaria que meu ensaio fosse..." required></textarea>
+                            <textarea cols="30" rows="10" name="message" placeholder="Eu gostaria que meu ensaio fosse..." required></textarea>
                         </div>
                         <div class="button-area">
+                            <input type="hidden" name="redirectTo" value="https://google.com.br">
                             <button type="submit">Enviar ensaio</button>
                         </div>
                     </form>
